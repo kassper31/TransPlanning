@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Document uuid="50ba4bda-a5e4-446c-8ca9-0460c351faed">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.Перевозка" category="Object">
+				<xr:TypeId>af580fae-6436-47c8-aa2f-2a02afdd56f4</xr:TypeId>
+				<xr:ValueId>a643a452-b2fe-4361-bb51-5d7f19b76544</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.Перевозка" category="Ref">
+				<xr:TypeId>5cd74daa-7e78-45ca-8425-bfde6519d6a7</xr:TypeId>
+				<xr:ValueId>f904d80d-ca95-4295-a97b-337a9b09bc61</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.Перевозка" category="Selection">
+				<xr:TypeId>20292800-7a60-47d4-a485-175c1f77a48a</xr:TypeId>
+				<xr:ValueId>30828ded-ec90-494c-93df-9f2f45afca2b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.Перевозка" category="List">
+				<xr:TypeId>b1d323ca-1936-4697-b52b-368ac9eef5eb</xr:TypeId>
+				<xr:ValueId>1a2c4838-3514-401d-bf26-e7a0a7a1751c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.Перевозка" category="Manager">
+				<xr:TypeId>5ccf50f9-6c77-449f-94ed-3078bfc66652</xr:TypeId>
+				<xr:ValueId>178c2509-1ecb-4033-b077-767607499063</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>Перевозка</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>8a24238f-86c2-4813-88d0-d97ff0f4a8d2</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<TabularSection uuid="79597e4e-3bcc-4c95-a49c-4cd15b4606be">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.Перевозка.Перевозки" category="TabularSection">
+						<xr:TypeId>a0c9fe80-3407-4f93-9737-fd7ad542ced6</xr:TypeId>
+						<xr:ValueId>be1d8698-ca20-4efe-9f00-633112cc591e</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.Перевозка.Перевозки" category="TabularSectionRow">
+						<xr:TypeId>469a3ecd-786a-44a8-aa58-aad6b7269e08</xr:TypeId>
+						<xr:ValueId>0ce6ce91-ff38-407f-813e-73c7e4fa4665</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Перевозки</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>924a3d8b-3e73-437f-a4e0-5c0327eb1e69</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="3e274e2f-8ea5-4c37-9a9e-9861a00c14f7">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Заявка</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>f8a9e288-74d6-45ba-bdb7-181f898b5dcb</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:DocumentRef.ЗаявкаОтЗаказчика</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="3772c06f-2e9f-40d6-b07e-8d9623086d35">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Запрос</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>b77ee617-ef3b-46f2-8eb3-1c7288788edc</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:DocumentRef.ЗапросНаПеревозку</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="130b3e94-4f85-400b-81d3-35e8abad3def">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Груз</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>a4d7459f-dfc9-4deb-9622-e317967f5487</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Грузы</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

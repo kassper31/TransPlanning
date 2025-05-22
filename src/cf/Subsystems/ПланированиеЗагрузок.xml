@@ -16,10 +16,13 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.Заявка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пзОбщегоНазначения</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
+			<Subsystem>НСИ</Subsystem>
+			<Subsystem>ОперативныйУчет</Subsystem>
+			<Subsystem>ФинансовыйУчет</Subsystem>
 			<Subsystem>ОбменДанными</Subsystem>
 		</ChildObjects>
 	</Subsystem>

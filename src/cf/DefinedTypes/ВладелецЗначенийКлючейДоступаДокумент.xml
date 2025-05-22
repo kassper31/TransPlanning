@@ -17,7 +17,7 @@
 			</Synonym>
 			<Comment/>
 			<Type>
-				<v8:Type>cfg:DocumentObject.Заявка</v8:Type>
+				<v8:Type>cfg:DocumentObject.ЗаявкаОтЗаказчика</v8:Type>
 			</Type>
 		</Properties>
 	</DefinedType>

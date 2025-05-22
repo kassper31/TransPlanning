@@ -53,7 +53,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Козел А.</Vendor>
-			<Version>1.0.1.1</Version>
+			<Version>1.0.1.2</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -823,6 +823,8 @@
 			<CommonTemplate>ПустойМакетDOCX</CommonTemplate>
 			<CommonTemplate>СтруктураПодчиненности</CommonTemplate>
 			<CommonTemplate>ШтампЭлектроннойПодписиOfficeOpen</CommonTemplate>
+			<CommonTemplate>librdkafka_win32</CommonTemplate>
+			<CommonTemplate>librdkafka_win64</CommonTemplate>
 			<FilterCriterion>СвязанныеДокументы</FilterCriterion>
 			<CommonModule>АдминистрированиеКластера</CommonModule>
 			<CommonModule>ВариантыОтчетовКлиент</CommonModule>
@@ -1057,6 +1059,8 @@
 			<CommonModule>ФизическиеЛицаКлиентСервер</CommonModule>
 			<CommonModule>ФизическиеЛицаКлиентСерверЛокализация</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыПЗ</CommonModule>
+			<CommonModule>КафкаСервер</CommonModule>
+			<CommonModule>пзОбщегоНазначения</CommonModule>
 			<CommonAttribute>ОтредактированныеПредопределенныеРеквизиты</CommonAttribute>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ApdexExport</XDTOPackage>
@@ -1163,6 +1167,7 @@
 			<ScheduledJob>УдалениеУстаревшихПараметровРаботыВерсийРасширений</ScheduledJob>
 			<ScheduledJob>УстановкаПорядкаОтложенногоОбновленияВМоделиСервиса</ScheduledJob>
 			<ScheduledJob>ЭкспортОценкиПроизводительности</ScheduledJob>
+			<ScheduledJob>ЗагрузкаЗаявок</ScheduledJob>
 			<SettingsStorage>ХранилищеВариантовОтчетов</SettingsStorage>
 			<FunctionalOption>АктуальнаяДатаОбновленияПовторноИспользуемыхЗначенийМРО</FunctionalOption>
 			<FunctionalOption>ИспользоватьВнешнихПользователей</FunctionalOption>
@@ -1388,7 +1393,20 @@
 			<Catalog>СеансыОбменовДанными</Catalog>
 			<Catalog>СтраныМира</Catalog>
 			<Catalog>СценарииОбменовДанными</Catalog>
-			<Document>Заявка</Document>
+			<Catalog>Топики</Catalog>
+			<Catalog>НастройкиПодключенияКафка</Catalog>
+			<Catalog>Контрагенты</Catalog>
+			<Catalog>Грузы</Catalog>
+			<Catalog>Организации</Catalog>
+			<Catalog>НаправленияПеревозок</Catalog>
+			<Catalog>Услуги</Catalog>
+			<Document>ЗаявкаОтЗаказчика</Document>
+			<Document>ЗапросНаПеревозку</Document>
+			<Document>Перевозка</Document>
+			<Document>РеализацияУслуг</Document>
+			<Document>ПоступлениеУслуг</Document>
+			<Document>ПоступлениеДенежныхСредств</Document>
+			<Document>СписаниеДенежныхСредств</Document>
 			<Enum>ВариантыПериода</Enum>
 			<Enum>ВидыТранспортаСообщенийОбмена</Enum>
 			<Enum>ВариантыПредставленияПериода</Enum>
@@ -1414,6 +1432,9 @@
 			<Enum>УровниПроизводительности</Enum>
 			<Enum>ФорматыВыгрузкиОбъектов</Enum>
 			<Enum>ФорматыСохраненияОтчетов</Enum>
+			<Enum>ВидОперации</Enum>
+			<Enum>СтатусыЗаявок</Enum>
+			<Enum>КатегорииГрузов</Enum>
 			<Report>АнализПравДоступа</Report>
 			<Report>ДвиженияДокумента</Report>
 			<Report>МестаИспользованияСсылок</Report>
@@ -1427,6 +1448,8 @@
 			<Report>УниверсальныйОтчет</Report>
 			<Report>УчастникиГруппДоступа</Report>
 			<Report>УчастникиГруппПользователей</Report>
+			<Report>ПрибылиИУбытки</Report>
+			<Report>ОтчетПоЗаказам</Report>
 			<DataProcessor>ВводКонтактнойИнформации</DataProcessor>
 			<DataProcessor>ВыгрузкаЗагрузкаEnterpriseData</DataProcessor>
 			<DataProcessor>ЖурналРегистрации</DataProcessor>
@@ -1546,6 +1569,11 @@
 			<InformationRegister>УдалитьНастройкиТранспортаОбмена</InformationRegister>
 			<InformationRegister>УдалитьНастройкиТранспортаОбменаДанными</InformationRegister>
 			<InformationRegister>УдалитьРезультатыОбменаДанными</InformationRegister>
+			<InformationRegister>СоответствиеТопиков</InformationRegister>
+			<InformationRegister>ОбменСообщениями</InformationRegister>
+			<AccumulationRegister>ОтложенныеВзаиморасчеты</AccumulationRegister>
+			<AccumulationRegister>ВзаиморасчетыСКонтрагентами</AccumulationRegister>
+			<AccumulationRegister>Оплаты</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

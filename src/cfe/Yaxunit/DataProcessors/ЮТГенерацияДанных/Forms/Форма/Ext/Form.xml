@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<CheckBoxField name="Перевозчик" id="14">
+			<DataPath>Перевозчик</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПеревозчикКонтекстноеМеню" id="15"/>
+			<ExtendedTooltip name="ПеревозчикРасширеннаяПодсказка" id="16"/>
+		</CheckBoxField>
+		<CheckBoxField name="Заказчик" id="17">
+			<DataPath>Заказчик</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗаказчикКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="ЗаказчикРасширеннаяПодсказка" id="19"/>
+		</CheckBoxField>
+		<InputField name="КоличествоОбъектов" id="1">
+			<DataPath>КоличествоОбъектов</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КоличествоОбъектовКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КоличествоОбъектовРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<Button name="СгенерироватьИОтправитьФиктивныеЗаявки" id="4">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.СгенерироватьИОтправитьФиктивныеЗаявки</CommandName>
+			<ExtendedTooltip name="СгенерироватьИОтправитьФиктивныеЗаявкиРасширеннаяПодсказка" id="5"/>
+		</Button>
+		<Button name="СгенерироватьГрузы" id="6">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.СгенерироватьГрузы</CommandName>
+			<ExtendedTooltip name="СгенерироватьГрузыРасширеннаяПодсказка" id="7"/>
+		</Button>
+		<Button name="СгенерироватьОрганизации" id="8">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.СгенерироватьОрганизации</CommandName>
+			<ExtendedTooltip name="СгенерироватьОрганизацииРасширеннаяПодсказка" id="9"/>
+		</Button>
+		<Button name="СгенерироватьКонтрагенты" id="10">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.СгенерироватьКонтрагенты</CommandName>
+			<ExtendedTooltip name="СгенерироватьКонтрагентыРасширеннаяПодсказка" id="11"/>
+		</Button>
+		<Button name="СгенерироватьНаправления" id="12">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.СгенерироватьНаправления</CommandName>
+			<ExtendedTooltip name="СгенерироватьНаправленияРасширеннаяПодсказка" id="13"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЮТГенерацияДанных</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="КоличествоОбъектов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Перевозчик" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перевозчик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Заказчик" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказчик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СгенерироватьИОтправитьФиктивныеЗаявки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать и отправить фиктивные заявки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать и отправить фиктивные заявки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СгенерироватьИОтправитьФиктивныеЗаявки</Action>
+		</Command>
+		<Command name="СгенерироватьГрузы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать грузы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать грузы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СгенерироватьГрузы</Action>
+		</Command>
+		<Command name="СгенерироватьОрганизации" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать организации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать организации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СгенерироватьОрганизации</Action>
+		</Command>
+		<Command name="СгенерироватьКонтрагенты" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать контрагенты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать контрагенты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СгенерироватьКонтрагенты</Action>
+		</Command>
+		<Command name="СгенерироватьНаправления" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать направления</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать направления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СгенерироватьНаправления</Action>
+		</Command>
+	</Commands>
+</Form>

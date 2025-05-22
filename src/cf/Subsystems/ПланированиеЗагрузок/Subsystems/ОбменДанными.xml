@@ -15,7 +15,18 @@
 			<UseOneCommand>false</UseOneCommand>
 			<Explanation/>
 			<Picture/>
-			<Content/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.librdkafka_win32</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.librdkafka_win64</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Топики</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкиПодключенияКафка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СоответствиеТопиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидОперации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОбменСообщениями</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КафкаСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ЗагрузкаЗаявок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПодсистемыКонфигурацииПереопределяемый</xr:Item>
+			</Content>
 		</Properties>
 		<ChildObjects/>
 	</Subsystem>

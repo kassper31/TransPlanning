@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Enum uuid="0be7cd89-0dd0-4e50-9540-23d1a43412a2">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.КатегорииГрузов" category="Ref">
+				<xr:TypeId>e21c3a92-bbe7-4a65-a898-669bfb7d6757</xr:TypeId>
+				<xr:ValueId>d9fb6d7e-a1cd-4d71-9acd-4066ecacdc2f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.КатегорииГрузов" category="Manager">
+				<xr:TypeId>5d0b4bd9-ffc9-4590-98c3-6e5617f4fdcd</xr:TypeId>
+				<xr:ValueId>f2a143fb-618a-43a0-b570-4a417af7b2f6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.КатегорииГрузов" category="List">
+				<xr:TypeId>dc444eeb-2f80-4964-9940-5f561e5fa74a</xr:TypeId>
+				<xr:ValueId>4522dba0-734c-4343-b3db-6427515efed4</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>КатегорииГрузов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>68d99978-d7e3-4ef1-a92e-94c2d46eac3e</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="640a2c1c-486d-4259-aab8-1bb6c19e8707">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Обычный</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>bca12a37-3dd0-4a83-9df7-251f040500f0</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="55a3a2f1-1f3d-44c3-9cf3-4fdbbd03e76d">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Хрупкий</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>bf2df9d7-b89c-4aaf-bf9a-1d3c52f4f8b3</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="38333fbf-419f-41c2-ad69-c292b4247dfc">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Опасный</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2a707f94-bd9f-4f6a-bfd6-48e2491b4b03</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d181c60b-db57-4e6c-bb9f-c44d8639fea4">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Скоропортящийся</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c376d9df-60ac-433d-8682-14510d34390f</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f53528f5-95ed-40b0-9cef-3bd97fd854c3">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Крупногабаритный</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f3436b65-011c-45be-abaa-3c407d13307e</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

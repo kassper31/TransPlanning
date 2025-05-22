@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AccumulationRegister uuid="e3524422-1795-4939-bf67-b532344b0ad9">
+		<InternalInfo>
+			<xr:GeneratedType name="AccumulationRegisterRecord.ОтложенныеВзаиморасчеты" category="Record">
+				<xr:TypeId>6a8eb2f4-ce7d-4873-aef6-0922e683e4cf</xr:TypeId>
+				<xr:ValueId>2e837a6e-6f32-4075-8dac-9e3d090c259b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterManager.ОтложенныеВзаиморасчеты" category="Manager">
+				<xr:TypeId>e2e509e6-cb75-462c-91f7-28146b83d513</xr:TypeId>
+				<xr:ValueId>4f7f3b38-a71f-4b92-9022-1e575a359fd6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterSelection.ОтложенныеВзаиморасчеты" category="Selection">
+				<xr:TypeId>5a3e299f-46e6-4271-a96c-2cb3acd96719</xr:TypeId>
+				<xr:ValueId>a5d5da1b-ecb6-44f7-9208-a679c8fe3805</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterList.ОтложенныеВзаиморасчеты" category="List">
+				<xr:TypeId>304ee0dc-21d6-46b2-809f-882678951dcf</xr:TypeId>
+				<xr:ValueId>a205762b-1df2-47c5-8776-bff7776755dc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordSet.ОтложенныеВзаиморасчеты" category="RecordSet">
+				<xr:TypeId>5bb817db-176a-45da-860a-1591ed67530c</xr:TypeId>
+				<xr:ValueId>e135d1f6-c085-4890-b88a-e275c5a74dc9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordKey.ОтложенныеВзаиморасчеты" category="RecordKey">
+				<xr:TypeId>97734f96-52a4-47bb-aed8-cc573958a1a5</xr:TypeId>
+				<xr:ValueId>d647fe1d-54de-49d1-92ab-5591d62bbdd6</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ОтложенныеВзаиморасчеты</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>a57fa16d-b9df-414c-b25a-456bec97a567</ExtendedConfigurationObject>
+			<RegisterType>Balance</RegisterType>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="409be05c-a453-4da2-b352-a82e64f1f694">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сумма</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>098bdd38-0d06-43c8-8c10-81e320e24273</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="9068d088-aab0-4173-8ccd-c5c89147d4d2">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СуммаУпр</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>02de458e-4636-4fa9-bbbf-eafca105a116</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="c12ca7fd-6d1e-413c-9791-bf5d8c07fe49">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Организация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>59d261a5-7647-4780-b7c2-f45fb98fc5c5</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="76c1e49c-a7f3-44ee-a7f1-747ecfbdbf79">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Валюта</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e5cbe0b5-170c-48f5-8c3b-0740e49d11db</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="9053e5cd-735f-4b09-aea5-37e83108b570">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Контрагент</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ca5f51b4-3ab9-4452-bf90-3413f94246f4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="0b3f741b-1720-4f59-af27-9e3a6f8d8dbc">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДокументВзаиморасчетов</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>14991824-987a-4de4-b5e9-947cd66a8112</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="5b172120-2956-4f9d-a9ec-c4bdb9e4463f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Перевозка</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>37bff111-0355-4b0b-b829-55f0fc8c05d2</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:DocumentRef.Перевозка</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</AccumulationRegister>
+</MetaDataObject>

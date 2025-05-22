@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Catalog uuid="91a5db26-0d05-4f58-902c-a07231c1a2b2">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.НаправленияПеревозок" category="Object">
+				<xr:TypeId>c02cba45-2bf7-4596-be89-2d93e10ae834</xr:TypeId>
+				<xr:ValueId>932ee051-f378-4a6d-8b25-8fbb0a767b44</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.НаправленияПеревозок" category="Ref">
+				<xr:TypeId>b92a6437-77bb-4fdb-be6c-128337958aea</xr:TypeId>
+				<xr:ValueId>9618993b-20a7-4d41-a3ad-5a2b9a0ad280</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.НаправленияПеревозок" category="Selection">
+				<xr:TypeId>f2d19735-a5d4-468c-814c-0bfee8ab4aab</xr:TypeId>
+				<xr:ValueId>8c92e2e7-02e6-4bfe-80a1-fdd53d120349</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.НаправленияПеревозок" category="List">
+				<xr:TypeId>f636bb74-00fb-44df-a431-8b270f12221b</xr:TypeId>
+				<xr:ValueId>2cee230f-5bd4-4638-8688-6238562605b6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.НаправленияПеревозок" category="Manager">
+				<xr:TypeId>686a24a6-9f24-4109-97b8-c3b7be222142</xr:TypeId>
+				<xr:ValueId>976ec161-700f-4692-a4ca-89f9528ff60c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>НаправленияПеревозок</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>600d96ff-6c7e-4555-b50b-54c0197f93c9</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="fc8578bd-f397-4365-b098-f316dc38781f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПунктОтправления</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b1758042-f15f-491a-bda6-c0e64235ee2a</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="343777bc-77be-4f9b-af54-d7a6ea98eefd">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПунктНазначения</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f6b1d58b-7daf-48a2-9a25-68e245226edf</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="1e2b0e47-350a-4363-b3d4-a0b3968a0efa">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Расстояние</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2f9c12a6-41a6-4b64-b065-d19c60aa62e6</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

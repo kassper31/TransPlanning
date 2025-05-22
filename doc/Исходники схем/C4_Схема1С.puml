@@ -1,0 +1,45 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+' доп.иконки для сервисов
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+!include DEVICONS/java.puml
+!include DEVICONS/msql_server.puml
+
+' LAYOUT_WITH_LEGEND()
+
+title Архитектура 1С:Планирование загрузок
+
+Person(Менеджер, Менеджер, "Специалист по клиентам")
+Person(Логист, Логист, "Специалист по перевозчикам")
+Person(Бухгалтер, Бухгалтер, "Сотрудник бухгалтерии")
+Person(Директор, Директор, "Руководитель")
+
+' Системы
+
+System_Ext(ВнешняяТМС, "Внешняя ТМС")  
+Component(Кафка,"Kafka","Брокер сообщений", $sprite="java",)
+
+System_Boundary(ПланированиеЗагрузок, "1С:Планирование загрузок") {
+    Container(ОперативныйУчет, "Оперативный учет", "")
+    Container(Финансовыйучет, "Финансовый учет", "")
+    Container(НСИ, "НСИ", "")
+}
+
+' Связи
+
+Rel(ВнешняяТМС, Кафка, "Заявки от заказчика")
+Rel(ПланированиеЗагрузок, Кафка, "Загрузка внешних заявок")
+Rel(Кафка, ОперативныйУчет, "Внешние заявки")
+Rel(Менеджер, ОперативныйУчет, "Создание заявок")
+Rel(Менеджер, НСИ, "Управление клиентской базой")
+Rel(Менеджер, Финансовыйучет, "Создание реализаций услуг")
+Rel(Логист, ОперативныйУчет, "Создание запросов на перевозку")
+Rel(Логист, Финансовыйучет, "Создание поступлений услуг")
+Rel(Логист, НСИ, "Управление базой перевозчиков")
+Rel(Бухгалтер, Финансовыйучет, "Платежные операции")
+Rel(Директор, ПланированиеЗагрузок, "Формирование отчетов")
+
+@enduml
